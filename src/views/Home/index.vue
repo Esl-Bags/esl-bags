@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import {onMounted} from 'vue'
+import { onMounted } from 'vue'
 import CustomHeader from '../../components/CustomHeader.vue'
 import { useRouter } from 'vue-router'
 export default {
