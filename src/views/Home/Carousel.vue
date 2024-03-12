@@ -1,0 +1,37 @@
+<template>
+  <carousel :items-to-show="1" :wrapAround="true">
+    <slide v-for="(image, index) in images" :key="index">
+      <img :src="image.src" alt="...">
+    </slide>
+
+    <template #addons>
+      <navigation />
+      <pagination />
+    </template>
+  </carousel>
+</template>
+
+<script>
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+
+export default {
+  name: 'App',
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
+  },
+
+  setup() {
+    const images = [
+      { 'src': '/src/assets/images/1.webp' },
+      { 'src': '/src/assets/images/2.webp' },
+      { 'src': '/src/assets/images/3.webp' },
+    ]
+
+    return { images }
+  }
+}
+</script>

@@ -1,8 +1,5 @@
 <template>
-    <custom-header
-        @create-account="goToAccountCreate"
-        @login="goToLogin"
-    />
+    <custom-header @create-account="goToAccountCreate" @login="goToLogin" />
     <carousel />
     <offer />
     <category />
@@ -14,10 +11,11 @@
 <script>
 import { onMounted } from 'vue'
 import CustomHeader from '../../components/CustomHeader.vue'
+import Carousel from './Carousel.vue'
 import { useRouter } from 'vue-router'
 export default {
-    components: { CustomHeader },
-    setup () {
+    components: { CustomHeader, Carousel },
+    setup() {
         const router = useRouter()
 
         onMounted(() => {

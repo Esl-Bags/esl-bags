@@ -3,7 +3,7 @@
         <div class="flex w-full lg:w-3/4">
             <img class="self-center rounded-full w-12 h-12 mx-5" src="/src/assets/esl_bags_logo.jpg" alt="Logo">
             <div class="flex items-center w-4/5">
-                <input class="rounded-l h-10 focus:outline-none px-3 w-11/12" type="text">
+                <input class="rounded-l h-10 focus:outline-none px-3 w-11/12 bg-white" type="text">
                 <button class="bg-brand-gray flex justify-center rounded-r items-center h-10 w-10">
                     <img fill="brand-graydark" src="/src/assets/icons/search.svg" alt="Pesquisar">
                 </button>
