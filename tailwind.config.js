@@ -1,3 +1,5 @@
+const palette = require('./palette');
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,6 +9,9 @@ export default {
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    extend: {
+      colors: palette
+    },
     accentColor: ({ theme }) => ({
       ...theme('colors'),
       auto: 'auto',
