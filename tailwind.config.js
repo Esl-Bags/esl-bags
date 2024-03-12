@@ -304,6 +304,10 @@ export default {
       DEFAULT: '1',
     },
     fontFamily: {
+      regular: ['RobotoRegular'],
+      medium: ['RobotoMedium'],
+      bold: ['RobotoBold'],
+      black: ['RobotoBlack'],
       sans: [
         'ui-sans-serif',
         'system-ui',

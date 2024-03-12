@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Construction from '../views/Construction.vue'
-import Home from '../views/Home/Index.vue'
+
+const Home = () => import('../views/Home/index.vue')
+const Construction = () => import('../views/Construction.vue')
 
 const routes = [
     {
@@ -17,6 +18,10 @@ const routes = [
         path: '/cadastro',
         name: 'Singup',
         component: Construction
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        redirect: { name: 'Home' }
     }
 
 ]
