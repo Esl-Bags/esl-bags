@@ -1,7 +1,7 @@
 <template>
   <carousel :items-to-show="1" :wrapAround="true" :autoplay="10000">
     <slide v-for="(image, index) in images" :key="index">
-      <img :src="image.src" alt="...">
+      <img :src="'/src/assets/images/' + image.src" alt="...">
     </slide>
 
     <template #addons>
@@ -24,9 +24,9 @@ export default {
 
   setup() {
     const images = [
-      { 'src': '/src/assets/images/1.jpeg' },
-      { 'src': '/src/assets/images/2.jpeg' },
-      { 'src': '/src/assets/images/3.jpeg' },
+      { 'src': '1.jpeg' },
+      { 'src': '2.jpeg' },
+      { 'src': '3.jpeg' },
     ]
 
     return { images }
