@@ -24,9 +24,9 @@ export default {
 
   setup() {
     const images = [
-      { 'src': '/src/assets/images/1.webp' },
-      { 'src': '/src/assets/images/2.webp' },
-      { 'src': '/src/assets/images/3.webp' },
+      { 'src': '/src/assets/images/1.jpeg' },
+      { 'src': '/src/assets/images/2.jpeg' },
+      { 'src': '/src/assets/images/3.jpeg' },
     ]
 
     return { images }
