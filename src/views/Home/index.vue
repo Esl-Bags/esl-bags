@@ -20,7 +20,6 @@ export default {
 
         onMounted(() => {
             const token = window.localStorage.getItem('token')
-            console.log(import.meta.env.VITE_API_URL)
         })
     }
 }
