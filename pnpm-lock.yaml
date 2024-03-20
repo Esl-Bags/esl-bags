@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@kyvg/vue3-notification':
+    specifier: ^3.2.1
+    version: 3.2.1(vue@3.4.21)
   axios:
     specifier: ^1.6.7
     version: 1.6.7
@@ -312,6 +315,14 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
+
+  /@kyvg/vue3-notification@3.2.1(vue@3.4.21):
+    resolution: {integrity: sha512-qn4bCBBCxW0Ya+RmHXu2SYBVwGXWsAGdlDKqCqyLryaZTbtFXi32iSSLnuKjSUVxFqQRToFc6g1zp1XLTyHrvw==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.4.21
+    dev: false
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}

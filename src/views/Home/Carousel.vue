@@ -14,6 +14,7 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 import { onMounted, reactive } from 'vue'
+import { useNotification } from "@kyvg/vue3-notification";
 
 import services from '../../services'
 
@@ -27,6 +28,7 @@ export default {
 
   setup() {
     const state = reactive({ images: [] })
+    const notification = useNotification()
 
     onMounted(async () => {
       try {
@@ -37,7 +39,7 @@ export default {
           }
         }
       } catch {
-
+        notification.notify('error', 'Deu bom não')
       }
     })
 
