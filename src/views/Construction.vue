@@ -10,11 +10,13 @@
 
 <script>
 import CustomHeader from '../components/CustomHeader.vue'
+import { reactive } from 'vue'
 
 export default {
     components: { CustomHeader },
     setup() {
-
+        const state = reactive({ isOpen: false })
+        return { state }
     }
 }
 </script>
